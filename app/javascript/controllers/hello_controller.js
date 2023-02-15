@@ -2,6 +2,12 @@ import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
   connect() {
-    this.element.textContent = "Hello World!"
+    $('.ui.dropdown')
+      .dropdown();
+    $('.message .close').on('click', function() {
+      $(this)
+        .closest('.message')
+        .remove();
+    });
   }
 }
