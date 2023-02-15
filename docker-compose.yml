@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./:/code/
+    ports:
+      - "3000:3000"
+    command: "rm -rf /code/tmp/pids/server.pid"
