@@ -3,13 +3,4 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import "jquery"
 import "semantic-ui"
-
-// $(document).on('turbo:load', function () {
-//   $('.ui.dropdown')
-//     .dropdown();
-//   $('.message .close').on('click', function() {
-//     $(this)
-//       .closest('.message')
-//       .transition('fade');
-//   });
-// })
+import "channels"
